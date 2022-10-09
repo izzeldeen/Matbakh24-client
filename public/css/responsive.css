@@ -1,0 +1,567 @@
+@media (max-width: 320px) {
+
+    .homeUser {
+        margin: 28px 17px;
+    }
+
+    .homeUser .logoPart {
+        min-height: 139%;
+    }
+
+    .homeUser .UserForm h2 {
+        font-size: 29px;
+    }
+
+    .innerContent .headCon{
+        margin-right: 0;
+    }
+
+    .innerContent .headCon .statBox svg {
+        position: absolute;
+        top: 25px;
+        left: 31px;
+        font-size: 17px;
+    }
+
+    .innerContent .headCon .statBox h5 {
+        margin-bottom: -1px;
+        font-size: 9px;
+    }
+
+
+    .innerContent .headCon .statBox small {
+        font-size: 11px;
+    }
+
+    .innerContent .headCon .statBox {
+
+        margin-bottom: 27px;
+    }
+
+    .selectInp button{
+        width: 100%;
+        text-align: right;
+    }
+
+
+    .mobHead{
+        display: block;
+        width: 100%;
+        z-index: 99999;
+    }
+    
+    .innerContent {
+        padding: 26px 0px;
+        margin-top: 48px;
+    }
+
+
+    .latestFiles .sideMenu {
+        width: 71%;
+        float: right;
+        height: 100%;
+        margin: 0px 0px;
+        box-shadow: -3px 0px 2px -2px #b0b0b0;
+        background-color: #d8d7d7;
+        position: fixed;
+        z-index: 99999999;
+        right: 0;
+        padding-top: 24px;
+        display: none;
+    }
+    
+    .addClient{
+        margin: 15px 15px;
+    }
+
+    .addClient .clientForm input{
+        font-size: 10px;
+    }
+
+    .addClient .clientHead h4 {
+        font-size: 26px;
+    }
+
+    .addClient .clientHead .addIcon{
+        top: -18px;
+    left: 1px;
+    }
+
+    .appHome{
+        position: absolute;
+    min-height: 187%;
+    }
+
+    .homeUser .UserForm .checkForm input {
+        margin-right: -14px;
+    }
+
+    #check-btn{
+        height: 20px;
+    }
+
+    table .btn{
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .css-19kzrtu{
+        padding: 0 !important;
+    }
+
+    .btnW{
+        width: 100% !important;
+    }
+}
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 357px) {
+    .homeUser {
+        margin: 28px 17px;
+    }
+
+    .homeUser .logoPart {
+        min-height: 139%;
+    }
+
+    .selectInp button{
+        width: 100%;
+        text-align: right;
+    }
+
+    .homeUser .UserForm h2 {
+        font-size: 29px;
+    }
+    .innerContent {
+        padding: 26px 0px;
+        margin-top: 48px;
+    }
+
+    .innerContent .headCon{
+        margin-right: 0;
+    }
+
+    .innerContent .headCon .statBox svg {
+        position: absolute;
+        top: 25px;
+        left: 31px;
+        font-size: 17px;
+    }
+
+    .innerContent .headCon .statBox h5 {
+        margin-bottom: -1px;
+        font-size: 9px;
+    }
+
+    .innerContent .headCon .statBox small {
+        font-size: 11px;
+    }
+
+    .innerContent .headCon .statBox {
+
+        margin-bottom: 27px;
+    }
+
+
+    .mobHead{
+        display: block;
+        width: 100%;
+        z-index: 99999;
+    }
+    
+    .innerContent {
+        padding: 26px;
+        margin-top: 48px;
+    }
+
+
+    .latestFiles .sideMenu {
+        width: 71%;
+        float: right;
+        height: 100%;
+        margin: 0px 0px;
+        box-shadow: -3px 0px 2px -2px #b0b0b0;
+        background-color: #d8d7d7;
+        position: fixed;
+        z-index: 99999999;
+        right: 0;
+        padding-top: 24px;
+        display: none;
+    }
+    
+    .addClient{
+        margin: 15px 15px;
+    }
+
+    .addClient .clientForm input{
+        font-size: 10px;
+    }
+
+    .addClient .clientHead h4 {
+        font-size: 26px;
+    }
+
+    .addClient .clientHead .addIcon{
+        top: -18px;
+    left: 1px;
+    }
+
+    .appHome{
+        position: absolute;
+        min-height: 187%;
+    }
+
+    .homeUser .UserForm .checkForm input {
+        margin-right: -14px;
+    }
+
+    #check-btn{
+        height: 20px;
+    }
+
+    table .btn{
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .css-19kzrtu{
+        padding: 0 !important;
+    }
+
+    .btnW{
+        width: 100% !important;
+    }
+}
+
+
+
+
+@media (min-width: 357px) and (max-width: 429px) { /* custom */
+
+    .homeUser {
+        margin: 28px 17px;
+    }
+
+    .selectInp button{
+        width: 100%;
+        text-align: right;
+    }
+
+    .homeUser .logoPart {
+        min-height: 139%;
+    }
+
+    .homeUser .UserForm h2 {
+        font-size: 29px;
+    }
+
+
+    .innerContent .headCon{
+        margin-right: 0;
+    }
+
+    .innerContent .headCon .statBox svg {
+        position: absolute;
+        top: 25px;
+        left: 31px;
+        font-size: 17px;
+    }
+
+    .innerContent .headCon .statBox h5 {
+        margin-bottom: -1px;
+        font-size: 9px;
+    }
+
+    .innerContent .headCon .statBox small {
+        font-size: 11px;
+    }
+
+    .innerContent .headCon .statBox {
+
+        margin-bottom: 27px;
+    }
+
+
+    .mobHead{
+        display: block;
+        width: 100%;
+        z-index: 99999;
+    }
+    
+    .innerContent {
+        padding: 26px 0px;
+        margin-top: 48px;
+    }
+
+
+    .latestFiles .sideMenu {
+        width: 71%;
+        float: right;
+        height: 100%;
+        margin: 0px 0px;
+        box-shadow: -3px 0px 2px -2px #b0b0b0;
+        background-color: #d8d7d7;
+        position: fixed;
+        z-index: 99999999;
+        right: 0;
+        padding-top: 24px;
+        display: none;
+    }
+    
+    .addClient{
+        margin: 15px 15px;
+    }
+
+    .addClient .clientForm input{
+        font-size: 10px;
+    }
+
+    .addClient .clientHead h4 {
+        font-size: 26px;
+    }
+    
+    .appHome{
+        position: absolute;
+        min-height: 187%;
+    }
+
+    .homeUser .UserForm .checkForm input {
+        margin-right: -14px;
+    }
+
+    #check-btn{
+        height: 20px;
+    }
+
+    table .btn{
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .css-19kzrtu{
+        padding: 0 !important;
+    }
+
+    .btnW{
+        width: 100% !important;
+    }
+}
+
+
+
+
+
+@media (min-width: 429px) and (max-width: 767px) {
+    .homeUser {
+        margin: 28px 17px;
+    }
+
+    .homeUser .logoPart {
+        min-height: 139%;
+    }
+
+    .selectInp button{
+        width: 100%;
+        text-align: right;
+    }
+
+    .btnW{
+        width: 100% !important;
+    }
+
+    .homeUser .UserForm h2 {
+        font-size: 29px;
+    }
+
+    .innerContent .headCon{
+        margin-right: 0;
+    }
+
+    .innerContent .headCon .statBox svg {
+        position: absolute;
+        top: 25px;
+        left: 31px;
+        font-size: 17px;
+    }
+
+    .innerContent .headCon .statBox h5 {
+        margin-bottom: -1px;
+        font-size: 11px;
+    }
+
+    .innerContent .headCon .statBox {
+
+        margin-bottom: 27px;
+    }
+
+
+    .mobHead{
+        display: block;
+        width: 100%;
+        z-index: 99999;
+    }
+    
+    .innerContent {
+        padding: 26px 0px;
+        margin-top: 48px;
+    }
+
+
+    .latestFiles .sideMenu {
+        width: 71%;
+        float: right;
+        height: 100%;
+        margin: 0px 0px;
+        box-shadow: -3px 0px 2px -2px #b0b0b0;
+        background-color: #d8d7d7;
+        position: fixed;
+        z-index: 99999999;
+        right: 0;
+        padding-top: 24px;
+        display: none;
+    }
+    
+    .addClient{
+        margin: 15px 15px;
+    }
+
+    .addClient .clientForm input{
+        font-size: 10px;
+    }
+
+    .addClient .clientHead h4 {
+        font-size: 26px;
+    }
+
+    .appHome{
+        position: absolute;
+        min-height: 187%;
+    }
+
+    .homeUser .UserForm .checkForm input {
+        margin-right: -14px;
+    }
+
+    #check-btn{
+        height: 20px;
+    }
+
+    table .btn{
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .css-19kzrtu{
+        padding: 0 !important;
+    }
+ 
+}
+
+
+
+@media (min-width: 768px) and (max-width:991px) { /*mediam screen*/
+    .homeUser {
+        margin: 28px 17px;
+    }
+
+    .homeUser .logoPart {
+        min-height: 139%;
+    }
+
+    .homeUser .UserForm h2 {
+        font-size: 29px;
+    }
+
+    .innerContent .headCon{
+        margin-right: 0;
+    }
+
+    .innerContent .headCon .statBox svg {
+        position: absolute;
+        top: 25px;
+        left: 31px;
+        font-size: 17px;
+    }
+
+    .innerContent .headCon .statBox h5 {
+        margin-bottom: -1px;
+        font-size: 7px;
+    }
+
+    .innerContent .headCon .statBox small {
+        font-size: 9px;
+    }
+
+    .innerContent .headCon .statBox {
+
+        margin-bottom: 27px;
+    }
+
+
+    .mobHead{
+        display: block;
+        width: 100%;
+        z-index: 99999;
+    }
+    
+    .innerContent {
+        padding: 26px;
+        margin-top: 48px;
+    }
+
+
+    .latestFiles .sideMenu {
+        width: 71%;
+        float: right;
+        height: 100%;
+        margin: 0px 0px;
+        box-shadow: -3px 0px 2px -2px #b0b0b0;
+        background-color: #d8d7d7;
+        position: fixed;
+        z-index: 99999999;
+        right: 0;
+        padding-top: 24px;
+        display: none;
+    }
+    
+    .addClient{
+        margin: 15px 15px;
+    }
+
+    .addClient .clientForm input{
+        font-size: 10px;
+    }
+
+    .addClient .clientHead h4 {
+        font-size: 26px;
+    }
+
+
+}
+
+@media (min-width: 992px) and (max-width:1199px) { /*large screen*/
+    
+    .innerContent .headCon{
+        margin-right: 20%;
+    }
+
+    .innerContent .headCon .statBox svg {
+        position: absolute;
+        top: 31px;
+        left: 29px;
+        font-size: 18px;
+    }
+
+    .innerContent .headCon .statBox h5 {
+        font-size: 11px;
+    }
+
+    .addClient {
+        margin: 95px 200px;
+    }
+    
+}
+

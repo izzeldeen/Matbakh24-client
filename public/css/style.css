@@ -1,0 +1,708 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
+body{
+    font-size: 18px;
+    font-family: 'Noto Naskh Arabic', serif;
+    /*
+    font-family: 'Tajawal', sans-serif !important;
+    */
+    font-weight: bold;
+}
+
+
+.appHome{
+    background-image:url(../img/login_background.png);
+    min-height: 100%;
+    width: 100%;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.homeUser{
+    margin: 126px 74px;
+}
+
+.homeUser .UserForm{    
+    text-align: right;
+    background-color: white;
+    padding: 3pc;
+
+}
+
+.homeUser .col-md-8{
+    margin: 0;
+    padding: 0;
+}
+
+.homeUser .col-md-4{
+    margin: 0;
+    padding: 0;
+}
+
+.homeUser .UserForm h2{
+    font-weight: 600;
+}
+
+
+.homeUser .UserForm p{
+    font-size: 14px;
+    margin: 27px 0px;
+    color: gray;
+}
+
+.homeUser .UserForm form{
+    
+}
+
+.homeUser .UserForm input{
+    
+    display: block;
+    width: 100%;
+    text-align: right;
+    border: none;
+    border-bottom: 1px solid #c2c1c1;
+    margin-bottom: 45px;
+    font-size: 14px;
+    padding-bottom: 6px;
+
+}
+
+.homeUser .UserForm .forgetPass{
+    direction: rtl;
+
+}
+
+.homeUser .UserForm .forgetPass a{
+
+}
+
+
+.m-t label{
+    margin-top: 16px;
+}
+
+.homeUser .UserForm .checkForm {
+    position: absolute;
+    left: 98px;
+}
+
+.homeUser .UserForm .checkForm input{
+    display: inline;
+    margin-bottom: 0;
+}
+
+.homeUser .UserForm .checkForm small{
+    position: relative;
+    top: -27px;
+    left: -35px;
+    font-weight: 600;
+}
+
+
+.homeUser .UserForm .Helper {
+    margin-top: 13px;
+    font-size: 13px;
+}
+
+.homeUser .UserForm .Helper a{
+    
+}
+
+
+.systemBtn{
+    width: 100%;
+    background-color: #c50024;
+    border: none;
+    color: white;
+    padding: 9px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.homeUser .logoPart{
+    padding-top: 50%;
+    background-image: url(../img/m24logo.png);
+    width: 100%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.homeUser .logoPart .LogoBack{
+    text-align: center;
+    border-radius: 26px;
+    
+
+}
+
+.homeUser .logoPart .LogoBack img{
+    width: 120px;
+    border-radius: 26px;
+    margin: auto;
+
+
+}
+
+
+
+
+
+
+
+.flex{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.latestFiles{
+    direction: rtl;
+    text-align: right;
+    display: flex;
+}
+
+
+
+.latestFiles .sideMenu{
+    width: 20%;
+    float: right;
+    height: 90vh;
+    margin: 27px 0px;
+    font-size: 20px;
+    z-index: 10;
+    font-weight: bold;
+
+    box-shadow: -3px 0px 2px -2px #b0b0b0;
+}
+
+.latestFiles .sideMenu .userImg{
+    width: 65px;
+}
+
+.latestFiles .sideMenu .userName{
+    margin-bottom: 0;
+}
+
+.latestFiles .sideMenu .userTitle{
+
+}
+
+.userDetails{
+    text-align: center;
+    margin-bottom: 28px;
+    margin-top: 21px;  
+}
+
+.innerContent{
+    padding: 26px
+}
+
+.btnW{
+    margin-right: 0 !important;
+}
+
+.innerContent .headCon{
+
+    background-color: #f0efef;
+    margin-right: 20%;
+    padding: 16px;
+    border-radius: 9px;
+    margin-bottom: 31px;
+
+}
+
+.innerContent .headCon .titlePage{
+
+}
+
+.innerContent .headCon .titlePage h2{
+
+}
+.innerContent .headCon .titlePage p{
+
+    color: gray;
+
+}
+
+
+
+.innerContent .headCon .statBox{
+    background-color: orange;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 9px;
+}
+
+.innerContent .headCon .statBox h5{
+    margin-bottom: -1px;
+    font-size: 14px;
+}
+
+.innerContent .headCon .statBox small{
+
+}
+
+.innerContent .headCon .statBox svg{
+    position: absolute;
+    top: 19px;
+    left: 39px;
+    font-size: 30px;
+}
+
+
+
+
+.orderForm{
+
+}
+
+
+.orderForm .fa-plus{
+    padding: 3px;
+    font-size: 12px;
+    border-radius: 100%;
+    position: absolute;
+    right: 38px;
+    border: 2px solid orange;
+    color: orange;
+}
+
+.titleSection{
+    margin-bottom: 19px;
+}
+
+.orderForm button{
+    width: 100%;
+    border: none;
+    padding: 15px;
+    margin-bottom: 11px;
+    border-radius: 6px;
+}
+
+.orderForm button{
+
+}
+
+
+.filesTable{
+    font-size: 14px;
+}
+
+.filesTable input{
+    
+}
+
+.filesTable svg{
+    color: #ecc909;
+}
+
+.filesTable img{
+    width: 27px;
+    height: 27px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+
+
+.filesTable .publish{
+    width: 57px;
+    height: 23px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    border-radius: 0px;
+    font-size: 10px;
+    padding-top: 5px;
+}
+
+.filesTable .disable{
+    width: 57px;
+    height: 23px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    border-radius: 0px;
+    font-size: 10px;
+    padding-top: 5px;
+}
+
+
+.filesTable .pend{
+    width: 57px;
+    height: 23px;
+    background-color: #dfe6e9;
+    color: black;
+    text-align: center;
+    border-radius: 0px;
+    font-size: 10px;
+    padding-top: 5px;
+}
+
+
+.filesTable .pending{
+    width: 57px;
+    height: 23px;
+    background-color: #ecbb2e;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 10px;
+    padding-top: 4px;
+    font-weight: 600;
+}
+
+
+.date-inp{
+    display: inline-block;
+    position: relative;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+}
+
+
+
+.dataTables_filter{
+    display: none;
+}
+
+
+.dataTables_length{
+    display: none;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: orange;
+    border-color: orange;
+}
+
+.page-link{
+    color: orange;
+}
+
+.page-item:last-child .page-link {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    color: orange;
+}
+
+
+/* Fixed sidenav, full height */
+.sidenav {
+    margin: 0px 20px;
+    position: relative;
+  }
+
+.sidenav .icon{
+    float: right;
+    margin-left: 10px;
+    color: orange;
+}
+  .notMsg{
+    background-color: orange;
+    color: white;
+    padding: 3px 7px;
+    border-radius: 100%;
+    font-size: 10px;
+    position: absolute;
+    left: 19px;
+  }
+
+  .sidenav .active{
+    background-color: #f6e9e9;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    color: #000000;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    font-weight: bold;
+    text-align: right;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 25px;
+}
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    background-color: #f6e9e9;
+  }
+  
+  /* Main content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    color: black;
+    padding-left: 8px;
+  }
+
+  .dropdown-container a{
+    padding: 7px 19px 7px 19px;
+    margin-bottom: 0;
+
+  }
+
+  .dropdown-container a:hover{
+    border-radius: 0;
+
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: left;
+    padding-right: 8px;
+    color: orange;
+  }
+
+
+
+
+  .addClient{
+
+    margin: 95px 425px;
+    direction: rtl;
+    box-shadow: 0px 0px 20px 1px #cecece;
+    padding: 32px;
+    border-radius: 21px;
+
+  }
+
+  .addClient .clientHead{
+    margin-bottom: 24px;
+}
+
+.addClient .clientHead h4{
+    
+    text-align: right;
+    font-size: 33px;
+
+}
+
+.addClient .clientHead .svgUser{
+    background-color: #b8b6b6;
+    padding: 32px;
+    border-radius: 32px;
+    font-size: 28px;
+}
+
+.addClient .clientHead .addIcon{
+    position: relative;
+    top: 9px;
+    left: 25px;
+    background-color: white;
+    border: 2px solid #212529;
+    border-radius: 100%;
+    padding: 4px;
+}
+
+.addClient .clientForm{
+
+}
+
+.addClient .clientForm input{
+    font-size: 14px;
+    color: #7a7a7a;
+}
+
+.addClient .clientForm .input-group{
+    margin-bottom: 17px;
+}
+
+
+.addClient .terms{
+    text-align: right;
+    margin-top: 8px;
+}
+
+
+.addClient .terms h4{
+    margin-bottom: 17px;
+}
+
+
+.input-group > .input-group-prepend > .input-group-text {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.input-group > .form-control:not(:first-child){
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.btnGroub{
+    margin-bottom: 18px;
+}
+
+.addClient .systemBtn{
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 43px;
+    height: 22px;
+    margin-top: 5px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #c50024;
+    width: 48px;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #c50024;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobHead{
+    background-color: #e0e0e0;
+    display: none;
+    width: 100%;
+    z-index: 99999;
+    height: 50px;
+    position: absolute;
+}
+
+.mobHead svg{
+      
+    margin-top: 15px;
+    font-size: 19px;
+
+}
+
+.mobHead img {
+ 
+    width: 39px;
+    float: left;
+    margin-top: 5px;
+
+}
+
+.outing{
+    z-index: 99999;
+    position: fixed;
+    background-color: #0000008f;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: none;
+}
+
+
