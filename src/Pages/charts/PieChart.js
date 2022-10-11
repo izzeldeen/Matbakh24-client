@@ -47,9 +47,9 @@ export default class PieChartView extends React.Component {
       return (
         
 
-  <div id="chart">
-<ReactApexChart options={this.state.options} series={this.state.series} type="pie" width={400}/>
-</div>
+  
+<ReactApexChart options={this.state.options} series={this.state.series} type="pie" width={'100%'} height={'350px'}/>
+
 
 
       );

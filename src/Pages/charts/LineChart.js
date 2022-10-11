@@ -49,18 +49,15 @@ class LineChart extends Component {
 
   render() {
     return (
-      <div className="app">
-        <div className="row">
-          <div className="mixed-chart">
+  
           <Chart
     options={this.state.options}
     series={this.state.series}
     type="line"
-    width="500"
+    width={'100%'}
+    height={'350px'}
   />
-          </div>
-        </div>
-      </div>
+       
     );
   }
 }

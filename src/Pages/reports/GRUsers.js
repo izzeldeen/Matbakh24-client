@@ -345,7 +345,7 @@ export default function GRUsers() {
                           UserId = teacher.Id,
                           UserName = teacher.Name */}
 
-                    {selectedUsers&&selectedUsers.map((row, index) => (
+                    {/* {selectedUsers&&selectedUsers.map((row, index) => (
                       <tr role="row" className="odd">
                         <td colSpan={2}>{index+1}</td>
                         <td colSpan={2}>{row?.fullName}</td>
@@ -356,7 +356,22 @@ export default function GRUsers() {
                         <td colSpan={2}>{sumOrders(row, 3)}</td>
                         <td colSpan={2}>{vatOrders(row, 3)}</td>
                       </tr>
+                    ))} */}
+
+                      {selectedUsers&& orders.map((row, index) => (
+                      
+                      <tr role="row" className="odd">
+                        <td colSpan={2}>{index+1}</td>
+                        <td colSpan={2}>{row?.name}</td>
+                        <td colSpan={2}>{row?.username}</td>
+                        <td colSpan={2}>{row.totalOrder} </td>
+                        <td colSpan={2}>{row.totalCompletedOrder}</td>
+                        <td colSpan={2}>{row.totalPendingOrder}</td>
+                        <td colSpan={2}>{row.totalPrice}</td>
+                        <td colSpan={2}>{row.totalPriceTax}</td>
+                      </tr>
                     ))}
+
                   </tbody>
                 </table>
               </div>  

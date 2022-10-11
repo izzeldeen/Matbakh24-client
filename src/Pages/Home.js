@@ -43,8 +43,8 @@ if (data == null) getData();
     return (data == null ? (
       <Loading/>
     ) :  <>
-      <div className="headCon bg-[white]">
-        <div className="row flex items-center">
+      <div className="headCon ">
+        <div className="row  justify-content-md-center">
           <div className="col-md-4 col-12">
             <div className="titlePage">
               <h1 className="text-dark">الاداء والتقييم </h1>
@@ -86,17 +86,62 @@ if (data == null) getData();
             </div>{/*end statBox*/}
           </div>
         </div>
-        <div className="col-12 bg-[#fff] rounded-lg mt-[50px] p-[20px]">
-      <div className="row text-[25px] m-3 px-3  font-bold color-[black]">
+        </div>
+
+ <div class="container-fluid">
+  <div class="row" style={{display: "flex", alignItems: "stretch"}}>
+    <div class="col-xl-6 mb-4">
+      <div className="chart-box ">
+      <LineChartOrders data={data}/>
+      </div>
+    
+    </div>
+    <div class="col-xl-6 mb-4">
+      <div className="chart-box">
+      <OrderStatusChart data={data}/>
+      </div>
+    </div>
+
+    <div class="col-xl-6 mb-4">
+      <div className="chart-box">
+      <ChartView data={data}/>
+      </div>
+    </div>
+
+    <div class="col-xl-6 mb-4">
+      <div className="chart-box">
+      <PieChartView data={data}/>
+      </div>
+    </div>
+
+    <div class="col-xl-6 mb-4">
+      <div className="chart-box">
+      <LineChart data={data}/>
+      </div>
+    </div>
+
+    <div class="col-xl-6 mb-4">
+      <div className="chart-box">
+      <DriversRateChart data={data}/>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+{/* 
+        <div className="col-12  rounded-lg mt-[50px]">
+      <div className="row  font-bold color-[black]">
         المبيعات
       </div>
-      <div className="row m-3 p-3 text-center">
+      <div className="row">
 
-      <div className="col-md-6 shadow-md flex items-center justify-center text-center">
+      <div className="col-md-6 chart-box">
       <LineChartOrders data={data}/>
       </div>
 
-      <div className="col-md-6 shadow-md flex items-center justify-center">
+      <div className="col-md-6 chart-box">
       <OrderStatusChart data={data}/>
       </div>
 
@@ -104,18 +149,18 @@ if (data == null) getData();
 
 
      
-      <div className="row text-[25px] m-3 px-3  font-bold color-[black]">
+      <div className="row    font-bold color-[black]">
         الطباخين
       </div>
 
 
-     <div className="row m-3 p-3 text-center">
+     <div className="row m-3 p-3 ">
       
-      <div className="col-md-6 shadow-md flex items-center justify-center text-center">
+      <div className="col-md-6 chart-box">
       <ChartView data={data}/>
       </div>
 
-      <div className="col-md-6 shadow-md flex items-center justify-center">
+      <div className="col-md-6 chart-box">
       <PieChartView data={data}/>
       </div>
 
@@ -124,20 +169,23 @@ if (data == null) getData();
      
    
       </div>
-      <div className="row text-[25px] m-3 px-3  font-bold color-[black]">
+      <div className="row   font-bold color-[black]">
         المناديب
       </div>
       <div className="row m-3 p-3 text-center">
-      <div className="col-md-6 shadow-md flex items-center justify-center text-center">
+      <div className="col-md-6 chart-box">
       <LineChart data={data}/>
       </div>
 
-      <div className="col-md-6 shadow-md flex items-center justify-center">
+      <div className="col-md-6    chart-box">
       <DriversRateChart data={data}/>
       </div>
       </div>
       </div>
-      </div>{/*end headCon*/}
+      </div> */}
+      
+      
+      {/*end headCon*/}
      
 
       

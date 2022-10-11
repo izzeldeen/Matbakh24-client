@@ -33,7 +33,7 @@ class LineChartOrders extends Component {
     this.state = {
       options  :{
         chart: {
-          height: 350,
+          height: '100%',
           type: "line",
           stacked: false
         },
@@ -138,18 +138,16 @@ class LineChartOrders extends Component {
 
   render() {
     return (
-      <div className="app">
-        <div className="row">
-          <div className="mixed-chart">
+ 
+            
           <Chart
     options={this.state.options}
     series={this.state.series}
     type="line"
-    width="600"
+    width={'100%'}
+    height={'350px'}
   />
-          </div>
-        </div>
-      </div>
+      
     );
   }
 }

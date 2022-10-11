@@ -26,7 +26,8 @@ export default function Roles() {
     }
   };
   return (
-    <div className="card col-8 card-default m-3 roles">
+    <div className="row">
+  <div className="card col-12 card-default m-3 roles">
                   <h1 className="my-3">{row?.fullName}</h1>
 
         <div
@@ -36,14 +37,9 @@ export default function Roles() {
           <h2 >الصلاحيات</h2>
         
         </div>
-        {/* /.card-header */}
-      
-    
-      {<div className="m-3 checks">
-
-        <div className="form-check2 ">
-          <input
-            className="form-check-input"
+        <div className="row role-container">
+        <div className="col-md-6 role-item">
+        <input className="role-input"
             onChange={(e) => {
               if (e.target.checked) {
                 userRoles = userRoles + " home"
@@ -52,44 +48,11 @@ export default function Roles() {
               }
             }}
             type="checkbox" />
-          <label className="check-lable">الرئيسية</label>
+             <label className="role-label">الرئيسية</label>
         </div>
-
-        {/* <div className="form-check2 ">
-          <input
-            className="form-check-input"
-            onChange={(e) => {
-              if (e.target.checked) {
-                userRoles = userRoles + " managers"
-              } else {
-                userRoles = userRoles.replace('managers', "")
-              }
-            }}
-            type="checkbox" />
-          <label className="check-lable">الإداريين</label>
-        </div> */}
-
-
-        {/* <div className="form-check2 ">
-          <input
-            className="form-check-input"
-            onChange={(e) => {
-              if (e.target.checked) {
-                userRoles = userRoles + " add-manager"
-              } else {
-                userRoles = userRoles.replace('add-manager', "")
-              }
-              console.log(userRoles);
-
-            }}
-            type="checkbox" />
-          <label className="check-lable">إضافة الإداريين</label>
-        </div> */}
-
-
-        <div className="form-check2 ">
-          <input
-            className="form-check-input"
+        <div className="col-md-6 role-item">
+        <input
+            className="role-input"
             onChange={(e) => {
               if (e.target.checked) {
                 userRoles = userRoles + " accounts"
@@ -100,12 +63,11 @@ export default function Roles() {
 
             }}
             type="checkbox" />
-          <label className="check-lable">المستخدمين</label>
+             <label className="role-label">المستخدمين</label>
         </div>
-
-        <div className="form-check2 ">
-          <input
-            className="form-check-input"
+        <div className="col-md-6 role-item">
+        <input
+            className="role-input"
             onChange={(e) => {
               if (e.target.checked) {
                 userRoles = userRoles + " providers"
@@ -114,30 +76,14 @@ export default function Roles() {
               }
             }}
             type="checkbox" />
-          <label className="check-lable">الطباخين</label>
+             <label className="role-label">الطباخين</label>
         </div>
 
-        {/* <div className="form-check2 ">
-          <input
-            className="form-check-input"
-            onChange={(e) => {
-              if (e.target.checked) {
-                userRoles = userRoles + " edit-provider"
-              } else {
-                userRoles = userRoles.replace('edit-provider', "")
-              }
-              console.log(userRoles);
+        
 
-            }}
-            type="checkbox" />
-          <label className="check-lable">تفعيل / تعطيل الطباخين</label>
-        </div> */}
-
-
-
-        <div className="form-check2 ">
-          <input
-            className="form-check-input"
+        <div className="col-md-6 role-item">
+        <input
+            className="role-input"
             onChange={(e) => {
               if (e.target.checked) {
                 userRoles = userRoles + " drivers"
@@ -148,57 +94,12 @@ export default function Roles() {
 
             }}
             type="checkbox" />
-          <label className="check-lable">المناديب</label>
+             <label className="role-label">المناديب</label>
         </div>
 
-        {/* <div className="form-check2 ">
-          <input
-            className="form-check-input"
-            onChange={(e) => {
-              if (e.target.checked) {
-                userRoles = userRoles + " edit-driver"
-              } else {
-                userRoles = userRoles.replace('edit-driver', "")
-              }
-              console.log(userRoles);
-
-            }}
-            type="checkbox" />
-          <label className="check-lable"> تفعيل / تعطيل الطباخين</label>
-        </div> */}
-
-        <div className="form-check2 ">
-          <input
-            className="form-check-input"
-            onChange={(e) => {
-              if (e.target.checked) {
-                userRoles = userRoles + " foods"
-              } else {
-                userRoles = userRoles.replace('foods', "")
-              }
-            }}
-            type="checkbox" />
-          <label className="check-lable">الطبخات</label>
-        </div>
-
-
-        {/* <div className="form-check2 ">
-          <input
-            className="form-check-input"
-            onChange={(e) => {
-              if (e.target.checked) {
-                userRoles = userRoles + " edit-food"
-              } else {
-                userRoles = userRoles.replace('edit-food', "")
-              }
-            }}
-            type="checkbox" />
-          <label className="check-lable">تعديل الطبخات</label>
-        </div> */}
-
-        <div className="form-check2 ">
-          <input
-            className="form-check-input"
+        <div className="col-md-6 role-item">
+        <input
+            className="role-input"
             onChange={(e) => {
               if (e.target.checked) {
                 userRoles = userRoles + " reports"
@@ -207,13 +108,12 @@ export default function Roles() {
               }
             }}
             type="checkbox" />
-          <label className="check-lable">التقارير</label>
+             <label className="role-label">التقارير</label>
         </div>
 
-
-        <div className="form-check2 ">
-          <input
-            className="form-check-input"
+        <div className="col-md-6 role-item">
+        <input
+            className="role-input"
             onChange={(e) => {
               if (e.target.checked) {
                 userRoles = userRoles + " orders"
@@ -222,12 +122,12 @@ export default function Roles() {
               }
             }}
             type="checkbox" />
-          <label className="check-lable">الطلبات</label>
+             <label className="role-label">الطلبات</label>
         </div>
 
-        <div className="form-check2 ">
-          <input
-            className="form-check-input"
+        <div className="col-md-6 role-item">
+        <input
+            className="role-input"
             onChange={(e) => {
               if (e.target.checked) {
                 userRoles = userRoles + " support"
@@ -236,21 +136,25 @@ export default function Roles() {
               }
             }}
             type="checkbox" />
-          <label className="check-lable"> الشكاوي</label>
+             <label className="role-label">الشكاوي</label>
         </div>
-        <div className="form-check2 "></div>
-        <div className="form-check2 "></div>
-        <div className="form-check2 "></div>
 
-      </div>}
 
-      <div onClick={
+        </div>
+      
+        <div  onClick={
         (e)=>{
             postForm()
         }
-      } className="systemBtn bg-[#FFCA08] mx-[30px] rounded-[10px] w-[150px] text-center   font-bold">
+      } className="systemBtn bg-[#FFCA08]  rounded-[10px] w-[150px] text-center   font-bold role-save-btn">
                   حفظ
                 </div>
+        </div>
+        {/* /.card-header */}
+
+  
+   
     </div>
+  
   );
 }
