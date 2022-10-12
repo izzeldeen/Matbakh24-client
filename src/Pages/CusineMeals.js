@@ -61,7 +61,9 @@ export default class CusineMeals extends React.Component{
    getData = async () => {
     try {
         const form  = new FormData()
-        form.append("marketId",this.props.row.provider.id)
+        console.log(this.props.location?.state);
+        return
+        form.append("marketId",this.props.row?.provider?.id ?? this.props.state.id)
       const response = await fetch(
         window.baseurl+"market/detail",
         {
@@ -85,8 +87,7 @@ export default class CusineMeals extends React.Component{
   };
 
   render(){
-    const { data } = this.props
-    console.log(data);
+  
     return  <div className="row">
     <div className="col-md-12">
     <div className="row">

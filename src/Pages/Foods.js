@@ -136,7 +136,18 @@ export default class Foods extends React.Component{
                       <td>{this.state.filteredData.indexOf(e)+1}</td>
                       <td>{e?.food.createdAt}</td>
                       <td>{e?.food.name.split("大")[0]}</td>
-                      <td>{e?.food.marketName.split("大")[0]}</td>
+                      
+                      <td className="pointer">
+                      <Link
+
+
+                         to={{ pathname: "/admin/provider/meals", state:  e.food.market_id  }}
+
+
+                        >
+                          {e?.food.marketName.split("大")[0]}
+                        </Link>
+                        </td>
                       <td>{e?.food.price+" SR"}</td>
                       <td>
                         
