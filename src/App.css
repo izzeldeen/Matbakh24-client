@@ -90,7 +90,9 @@
 .item-container{
   padding:  15px;
   border-radius: 20px;
-  background-color: rgba(162, 160, 160, 0.188);
+  background-color: rgba(250, 240, 240, 0.188);
+  box-shadow: 0px 0px 20px 1px #cecece;
+  
 }
 
 .item-title{

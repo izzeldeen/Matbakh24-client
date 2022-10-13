@@ -61,12 +61,11 @@ export default class Accounts extends React.Component{
   render(){
     return  <div className="row">
     <div className="col-md-12">
+   
     <div className="row">
-        <div className="col-2">
-        <h4 className="titleSection"> الحسابات</h4>
-
-        </div>
-
+      <div className="col-md-3" >
+      <h4 className="titleSection"> المستخدمين</h4>
+      </div>
         <div className="col-md-3">
           <div className="form-group">
             <label asp-for="Name"> بحث</label>

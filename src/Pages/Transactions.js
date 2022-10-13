@@ -2,9 +2,8 @@ import React from 'react';
 export default function Transactions(){
     return  <div className="row ">
     <div className="col-md-12">
-      <div className="row flex justify-between items-stretch">
-        <div className="col-9">
-          <div className="col-5">
+      <div className="row">
+          <div className="col-3">
             <h4 className="titleSection"> العمليات المالية</h4>
           </div>
           <div className="col-md-5">
@@ -19,7 +18,7 @@ export default function Transactions(){
               />
             </div>
           </div>
-        </div>
+       
 
      
       </div>

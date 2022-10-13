@@ -109,9 +109,7 @@ export default function Login({error}) {
               </div>
               <div className="col-md-4">
                 <div className="logoPart">
-                  {/* <div className="LogoBack">
-                    <img src="img/appLogo.png" alt="img" />
-                  </div> */}
+                    <img className="LogoBack" width={'100%'} src="img/appLogo.png" alt="img" />
                 </div>
               </div>
             </div>

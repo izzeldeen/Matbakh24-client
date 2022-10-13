@@ -37,7 +37,10 @@ class OrderStatusChart extends Component {
               value: {
                 color: "#111",
                 fontSize: "30px",
-                show: true
+                show: true,
+                formatter: (value) => {
+                  return value.toFixed(3)
+                },
               }
             }
           }

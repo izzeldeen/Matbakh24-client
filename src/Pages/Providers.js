@@ -114,9 +114,10 @@ export default class Providers extends React.Component {
     return (
       <div className="row">
         <div className="col-md-12">
+       
           <div className="row">
-            <div className="col-2">
-              <h4 className="titleSection"> الطباخين</h4>
+            <div className="col-md-3">
+            <h4 className="titleSection"> الطباخين</h4>
             </div>
             <div className="col-md-3">
             <div className="form-group">

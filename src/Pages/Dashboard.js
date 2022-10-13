@@ -30,7 +30,10 @@ export default class Dashboard extends React.Component{
      <div className="container-fluid">
         <SideMenu/>
        <div className="innerContent">
-          <Outlet/>
+        <div className="body-content" >
+        <Outlet/>
+        </div>
+         
        </div>{/*end innerContent*/}
      </div>{/*end container*/}
    </section>
