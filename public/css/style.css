@@ -218,7 +218,38 @@ body{
 .btnW{
     margin-right: 0 !important;
 }
+.food-details-body {
+    background-color: #fcfafa;
+    position: absolute;
+    right: 23%;
+    left: 4%;
+    top: 16%;
+    box-shadow: 1px 10px 8px #535353;
+    
+}
+.image-gallery {
+    width: 100%;
+    margin-right: auto;
+    
+}
 
+.food-details-header {
+    color: orange;
+}
+.image-gallery-slide img {
+    width: 80%;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: center center;
+}
+
+.fullscreen .image-gallery-slide img {
+    max-height: 300px;
+}
+.image-gallery-image{
+    width: 50%;
+    height: 50vh;
+}
 .innerContent .headCon{
 
     background-color: #f0efef;
@@ -228,7 +259,12 @@ body{
     margin-bottom: 31px;
 
 }
+.chart-box {
+    background-color: white;
+    box-shadow: 1px;
+    box-shadow: 1px 10px 8px #535353;
 
+}
 .innerContent .headCon .titlePage{
 
 }
@@ -407,7 +443,28 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: orange;
     border-color: orange;
 }
+.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    flex-wrap: wrap;
+  }
+  .row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }
+  .check-lable {
+    display: inline-block;
+    font-size: 50px;
+   
+  
+  }
 
+  .chart-box { 
+    height: 100%;
+    padding: 5px;
+  }
 .page-link{
     color: orange;
 }
@@ -705,4 +762,26 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
 }
 
+.role-container {
+    margin-top: 3%;
+}
+.role-item {
+    font-size: 20px;
+    display: block;
+}
+.role-input {
+width: 25px;
+height: 25px;
+display: block;
+}
+.role-label {
+    margin-bottom: 0.5rem;
+    font-size: 29px;
+    margin-right: 11px;
+    margin-right: 30px;
+    margin-top: -31px;
+}
+.role-save-btn {
+    margin-right: auto;
+}
 

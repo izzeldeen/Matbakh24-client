@@ -35,11 +35,15 @@ import Settings from './Pages/Settings';
 import ContactUs from './Pages/ContactUs';
 import CusinePage from './Pages/CusinePage';
 import CusineMeals from './Pages/CusineMeals';
+import MailsList from './Pages/MailsList';
 
 function App() {
-  window.baseurl = "http://localhost:5009/"
+  // window.baseurl = "http://localhost:5009/"
   // window.baseurl = "https://webapi.matbakh24.com/"
-  // window.baseurl = "https://dev.webapi.matbakh24.com/"
+
+  //  window.baseurl = "https://localhost:44308/"
+ // window.baseurl = "https://webapi.matbakh24.com/"
+  window.baseurl = "https://dev.webapi.matbakh24.com/"
   return (
     <Router basename="/">
     <Routes >
@@ -60,7 +64,8 @@ function App() {
       <Route path="roles" element={hasRole("roles")?<Roles />:<Login error={true}/>} />
       <Route path="providers" element={hasRole("providers")?<Providers />:<Login error={true}/>} />
       <Route path="provider/detail" element={<CusinePage />} />
-      <Route path="provider/meals" element={<CusineMeals />} />
+      <Route path="provider/meals" element={<MailsList />} />
+      {/* <Route path="provider/meals" element={<CusineMeals />} /> */}
       <Route path="driver/detail" element={<DriverDetails />} />
       <Route path="drivers" element={hasRole("drivers")?<Drivers />:<Login error={true}/>} />
       <Route path="admins/add" element={hasRole("add-manager")?<AddAdmin />:<Login error={true}/>} />

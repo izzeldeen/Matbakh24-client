@@ -14,7 +14,6 @@ class OrderStatusChart extends Component {
       series: this.filterData(this.props.data) ,
       options: {
         chart: {
-          height: 280,
           type: "radialBar"
         },
  
@@ -57,9 +56,10 @@ class OrderStatusChart extends Component {
   render() {
 
     return (
-      <div className="donut">
-        <Chart options={this.state.options} series={this.state.series} type="radialBar"/>
-      </div>
+     
+        <Chart options={this.state.options} series={this.state.series} type="radialBar" width={'100%'}
+        height={'350px'} />
+     
     );
   }
 }
