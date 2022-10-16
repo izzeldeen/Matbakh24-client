@@ -61,11 +61,9 @@ export default class CusineMeals extends React.Component{
    getData = async () => {
     try {
         const form  = new FormData()
-        console.log(this.props.location?.state);
-        return
-        form.append("marketId",this.props.row?.provider?.id ?? this.props.state.id)
+         form.append("marketId",this.props.row.provider.id)
       const response = await fetch(
-        window.baseurl+"market/detail",
+        window.baseurl+"admin/market/detail",
         {
           method: "Post",
           headers: {
@@ -140,9 +138,23 @@ export default class CusineMeals extends React.Component{
                         }
                       </td>
                       <td>
-                        <SwitcherView status={e?.food.status} onChange={(checked)=>{
+
+                      <div
+                onClick={
+                  (ev)=>{
+                    var status = e.food.status==0?1:0;
+                    this.updateFood(status,e.food.id)
+                  }
+                }
+                className="row cursor-pointer">
+                <h6 className={e.food.status==0?"pend":"publish"}>مفعل</h6>
+                <h6 className={e.food.status==1?"pend":"disable"}>غير مفعل</h6>
+                </div>
+
+
+                        {/* <SwitcherView status={e?.food.status} onChange={(checked)=>{
                           this.updateFood(checked,e.food.id)
-                        }}/>
+                        }}/> */}
                       </td>
                       <td>
                         <div className="row">

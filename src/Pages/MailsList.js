@@ -2,11 +2,14 @@ import { Pagination } from "@mui/material";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Loading from "../Components/Spinner";
-export default class Foods extends React.Component{
+import SwitcherView from "../Components/Switcher";
+
+
+
+export default class MailsList extends React.Component{
   componentDidMount(){
     this.getData()
   }
-  search  = ""
   pageCount = 10
   constructor(props) {
     super(props);
@@ -23,7 +26,7 @@ export default class Foods extends React.Component{
     var form = new FormData()
     form.append("id",id.toString())
     form.append("status",status.toString())
-
+ 
     console.log(jsonRequest);
     try {
       const response = await fetch(window.baseurl+"food/update-status", {
@@ -40,6 +43,8 @@ export default class Foods extends React.Component{
   };
 
 
+
+
   onPaginationChange(event, value){
     this.setState({ page:value});
   }
@@ -51,7 +56,6 @@ export default class Foods extends React.Component{
 
   data =null
   searchData(search){
-    this.search = search
    var filtered = search==""?this.data:  this.data.filter(e=>e.food.marketName.includes(search)||e.food.name.includes(search))
    this.setState({filteredData:filtered})
   }
@@ -59,21 +63,24 @@ export default class Foods extends React.Component{
    
    getData = async () => {
     try {
+        const form  = new FormData()
+         form.append("marketId",0)
       const response = await fetch(
-        window.baseurl+"admin/get-foods",
+        window.baseurl+"admin/market/detail",
         {
-          method: "Get",
+          method: "Post",
           headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
             Authorization: "Bearer " + localStorage.getItem("token"),
           },
-        }
+          body:form
+   
+        },
+        
       );
       const json = await response.json();
       console.log(json);
-      this.data = json
-      this.searchData(this.search)
+      this.data = json.foods
+      this.searchData("")
       return json;
     } catch (error) {
       console.error(error);
@@ -81,26 +88,12 @@ export default class Foods extends React.Component{
   };
 
   render(){
+  
     return  <div className="row">
     <div className="col-md-12">
     <div className="row">
-        <div className="col-2">
-        <h4 className="titleSection"> الوجبات</h4>
+       
 
-        </div>
-
-        <div className="col-md-3">
-          <div className="form-group">
-            <label asp-for="Name"> بحث</label>
-            <input
-              type="text"
-              onChange={(e) => this.searchData(e.target.value)}
-              className="form-control"
-              id="name"
-              placeholder=" عنوان الوجبة ، اسم مزود الخدمة"
-            />
-          </div>
-        </div>
       </div>
               {this.data == null ? (
               <Loading/>
@@ -115,9 +108,7 @@ export default class Foods extends React.Component{
                     <i className="fa fa-star" />
                   </th>
                   <th scope="col">م</th>
-                  <th scope="col">تاريخ</th>
                   <th scope="col">اسم الوجية</th>
-                  <th scope="col">مزود الخدمة</th>
                   <th scope="col">السعر</th>
                   <th scope="col">الصورة</th>
                   <th scope="col">مفعل</th>
@@ -133,26 +124,7 @@ export default class Foods extends React.Component{
                         <i className="fa fa-star" />
                       </td>
                       <td>{this.state.filteredData.indexOf(e)+1}</td>
-                      <td>{e?.food.createdAt}</td>
                       <td>{e?.food.name.split("大")[0]}</td>
-                      
-                      <td >
-
-                          <div className="cursor-pointer" 
-                          
-                        //   onClick={(ev)=>{
-                        //   markId= e.food.market_id
-                        //   console.log(window.market_id);
-                        //   window.location ="/admin/provider/meals"
-                        // }}
-                        
-                        >
-                          {e?.food.marketName.split("大")[0]}
-                          </div>
-
-                       
-                    
-                        </td>
                       <td>{e?.food.price+" SR"}</td>
                       <td>
                         
@@ -169,26 +141,13 @@ export default class Foods extends React.Component{
                         }
                       </td>
                       <td>
-
-                      <div
-                onClick={
-                  (ev)=>{
-                    var status = e.food.status==0?1:0;
-                    this.updateFood(status,e.food.id)
-                  }
-                }
-                className="row cursor-pointer">
-                <h6 className={e.food.status==0?"pend":"publish"}>مفعل</h6>
-                <h6 className={e.food.status==1?"pend":"disable"}>غير مفعل</h6>
-                </div>
-
-                        {/* <SwitcherView status={e?.food.status} onChange={(checked)=>{
+                        <SwitcherView status={e?.food.status} onChange={(checked)=>{
                           this.updateFood(checked,e.food.id)
-                        }}/> */}
+                        }}/>
                       </td>
                       <td>
                         <div className="row">
-                        <Link to={"/admin/foods/detail"} state={{
+                        <Link to={"/admin/foods/detail"}    state={{
                                 row: e,
                               }}>
 

@@ -20,7 +20,7 @@ export default function CusinePage(){
     return <div>
         <div className="flex m-auto h-[40px]  flex justify-center items-center">
             <div onClick={(e)=>handelSelect(0)} className={(index==0?selectedStyle:unSelectedStyle)+" rounded-r-lg"}>
-                <div className="m-auto ">تفاصيل المطبخ</div>
+                <div className="m-auto">تفاصيل المطبخ</div>
             </div>
 
             <div onClick={(e)=>handelSelect(1)} className={(index==1?selectedStyle:unSelectedStyle)+" rounded-l-lg"}>
