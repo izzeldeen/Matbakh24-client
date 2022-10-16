@@ -105,14 +105,11 @@ export default class  Drivers extends React.Component{
 
       return <div className="row">
       <div className="col-md-12">
+     
         <div className="row">
-
-          <div className="col-2">
-          <h4 className="titleSection">جميع الحسابات</h4>
-
+          <div className="col-md-3">
+          <h4 className="titleSection">جميع المناديب</h4>
           </div>
-
-
      <div className="col-md-3">
             <div className="form-group">
               <label asp-for="City">حسب المدينة</label>

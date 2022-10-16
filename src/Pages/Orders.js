@@ -87,7 +87,7 @@ onPaginationChange(event, value){
     <div className="col-md-12">
 
       <div className="row">
-          <div className="col-2">
+          <div className="col-3">
           <h4 className="titleSection"> الطلبات</h4>
 
           </div>

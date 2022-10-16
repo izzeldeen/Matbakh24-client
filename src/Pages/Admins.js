@@ -68,12 +68,11 @@ export default class Admins extends React.Component {
     return (
       <div className="row ">
         <div className="col-md-12">
-          <div className="row flex justify-between items-stretch">
-            <div className="col-9">
-              <div className="col-5">
+          <div className="row">
+              <div className="col-3">
                 <h4 className="titleSection"> المديرين</h4>
               </div>
-              <div className="col-md-5">
+              <div className="col-md-6">
                 <div className="form-group">
                   <label asp-for="Name"> بحث</label>
                   <input
@@ -83,17 +82,21 @@ export default class Admins extends React.Component {
                     id="name"
                     placeholder=" الاسم ، رقم الهاتف ، الايميل"
                   />
-                </div>
               </div>
-            </div>
-
-            <div>
-              <Link to={"/admin/admins/add"}>
+              </div>
+              <div className="col-3 pt-3" >
+            <Link to={"/admin/admins/add"}>
                 <div className="systemBtn bg-[#FFCA08] mx-[30px] rounded-[10px] w-[150px] btn text-center   font-bold">
                   إضافة
                 </div>
               </Link>
             </div>
+
+           
+
+         
+           
+            
           </div>
           {this.data == null ? (
             <Loading />

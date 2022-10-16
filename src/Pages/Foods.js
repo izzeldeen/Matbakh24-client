@@ -2,6 +2,10 @@ import { Pagination } from "@mui/material";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Loading from "../Components/Spinner";
+import SwitcherView from "../Components/Switcher";
+import Popup from 'reactjs-popup';
+import CusineMeals from "./CusineMeals"
+
 export default class Foods extends React.Component{
   componentDidMount(){
     this.getData()
@@ -17,6 +21,8 @@ export default class Foods extends React.Component{
     };
     this.onPaginationChange = this.onPaginationChange.bind(this)
   }
+
+
 
   updateFood= async (status,id) => {
     const jsonRequest = {}
@@ -56,6 +62,7 @@ export default class Foods extends React.Component{
    this.setState({filteredData:filtered})
   }
 
+  
    
    getData = async () => {
     try {
@@ -84,7 +91,7 @@ export default class Foods extends React.Component{
     return  <div className="row">
     <div className="col-md-12">
     <div className="row">
-        <div className="col-2">
+        <div className="col-3">
         <h4 className="titleSection"> الوجبات</h4>
 
         </div>
@@ -94,7 +101,7 @@ export default class Foods extends React.Component{
             <label asp-for="Name"> بحث</label>
             <input
               type="text"
-              onChange={(e) => this.searchData(e.target.value)}
+              onChange={(e) => this.PopupExample()}
               className="form-control"
               id="name"
               placeholder=" عنوان الوجبة ، اسم مزود الخدمة"
@@ -118,10 +125,12 @@ export default class Foods extends React.Component{
                   <th scope="col">تاريخ</th>
                   <th scope="col">اسم الوجية</th>
                   <th scope="col">مزود الخدمة</th>
-                  <th scope="col">السعر</th>
+                  <th scope="col">سعر الطباخة</th>
+                  <th scope="col">سعر المستخدم</th>
                   <th scope="col">الصورة</th>
                   <th scope="col">مفعل</th>
                   <th scope="col">إجراء</th>
+                  <th scope="col"></th>
                 </tr>
               </thead>
               <tbody>
@@ -135,24 +144,8 @@ export default class Foods extends React.Component{
                       <td>{this.state.filteredData.indexOf(e)+1}</td>
                       <td>{e?.food.createdAt}</td>
                       <td>{e?.food.name.split("大")[0]}</td>
-                      
-                      <td >
-
-                          <div className="cursor-pointer" 
-                          
-                        //   onClick={(ev)=>{
-                        //   markId= e.food.market_id
-                        //   console.log(window.market_id);
-                        //   window.location ="/admin/provider/meals"
-                        // }}
-                        
-                        >
-                          {e?.food.marketName.split("大")[0]}
-                          </div>
-
-                       
-                    
-                        </td>
+                      <td>{e?.food.marketName.split("大")[0]}</td>
+                      <td>{(e?.food.price - (e?.food.price * .25) )+" SR"}</td>
                       <td>{e?.food.price+" SR"}</td>
                       <td>
                         
@@ -194,6 +187,8 @@ export default class Foods extends React.Component{
 
                         <button type="button" class="btn btn-outline-success btn-sm mx-1">تفاصيل</button>
                         </Link>
+
+                     
                         {/* <Link to={"/admin/foods/edit"}    state={{
                                 row: e,
                               }}>
@@ -202,6 +197,22 @@ export default class Foods extends React.Component{
                         </Link> */}
                     
                         </div>
+                      </td>
+                      <td>
+                      <Popup 
+  trigger={open => (
+    <button className="button btn btn-outline-success btn-sm mx-1" > قائمة الطبخات</button> 
+  )}
+  position="right center"
+  closeOnDocumentClick
+>
+  <div className="food-header"  >
+  <h3 className="text-right">قائمة الطبخات</h3>
+  <CusineMeals row={e}/>
+  </div>
+
+
+</Popup>
                       </td>
 
                     </tr>
@@ -216,6 +227,11 @@ export default class Foods extends React.Component{
       </div>
 }
     </div> 
+
+
+
   </div>
+
+  
   }
 }

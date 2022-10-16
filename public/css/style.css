@@ -123,19 +123,17 @@ body{
 
 .homeUser .logoPart{
     padding-top: 50%;
-    background-image: url(../img/m24logo.png);
     width: 100%;
     min-height: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
-
 }
 
 .homeUser .logoPart .LogoBack{
+    position: absolute;
     text-align: center;
-    border-radius: 26px;
-    
-
+    width: 100%;
+    height: 100%;
+    top:0%;
 }
 
 .homeUser .logoPart .LogoBack img{
@@ -212,23 +210,29 @@ body{
 }
 
 .innerContent{
-    padding: 26px
+    position: absolute;
+    top: 8%;
+    right: 20%;
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
 }
-
+.body-content{
+    width: 78%;
+   
+}
 .btnW{
     margin-right: 0 !important;
 }
 .food-details-body {
     background-color: #fcfafa;
     position: absolute;
-    right: 23%;
-    left: 4%;
-    top: 16%;
     box-shadow: 1px 10px 8px #535353;
+    width: 74%;
     
 }
 .image-gallery {
-    width: 100%;
+    width: 95%;
     margin-right: auto;
     
 }
@@ -247,14 +251,13 @@ body{
     max-height: 300px;
 }
 .image-gallery-image{
-    width: 50%;
+    width: 45%;
     height: 50vh;
 }
 .innerContent .headCon{
 
     background-color: #f0efef;
-    margin-right: 20%;
-    padding: 16px;
+    padding: 10px;
     border-radius: 9px;
     margin-bottom: 31px;
 
@@ -323,7 +326,8 @@ body{
 }
 
 .titleSection{
-    margin-bottom: 19px;
+    font-size: 40px;
+    margin-top: 31px;
 }
 
 .orderForm button{
@@ -785,3 +789,35 @@ display: block;
     margin-right: auto;
 }
 
+.popup-content {
+    position: fixed;
+    z-index: 999;
+    width: 800px;
+    background-color: rgb(250, 243, 243);
+    height: 300px;
+    direction: rtl;
+    padding:10px;
+    font-size: 20px;
+}
+
+.popup-arrow {
+  color: rgb(255, 255, 255);
+}
+[role='tooltip'].popup-content {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup='tooltip'].popup-overlay {
+  background: transparent;
+}
+.food-header {
+    padding: 5px;
+}
+
+.react-tabs {
+    position: absolute;
+    width: 70%;
+}
