@@ -61,7 +61,8 @@ export default class CusineMeals extends React.Component{
    getData = async () => {
     try {
         const form  = new FormData()
-         form.append("marketId",this.props.row.provider.id)
+        console.log(this.props.row);
+         form.append("marketId", this.props.row.provider ? this.props.row.provider.id : this.props.row.food.market_id)
       const response = await fetch(
         window.baseurl+"admin/market/detail",
         {
