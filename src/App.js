@@ -36,13 +36,13 @@ import ContactUs from './Pages/ContactUs';
 import CusinePage from './Pages/CusinePage';
 import CusineMeals from './Pages/CusineMeals';
 import MailsList from './Pages/MailsList';
+import TransactionDetails from './Pages/TransactionDetails';
 
 function App() {
   // window.baseurl = "http://localhost:5009/"
   // window.baseurl = "https://webapi.matbakh24.com/"
-
-  //  window.baseurl = "https://localhost:44308/"
- // window.baseurl = "https://webapi.matbakh24.com/"
+    // window.baseurl = "https://localhost:44308/"
+  // window.baseurl = "https://webapi.matbakh24.com/"
   window.baseurl = "https://dev.webapi.matbakh24.com/"
   return (
     <Router basename="/">
@@ -71,6 +71,7 @@ function App() {
       <Route path="admins/add" element={hasRole("add-manager")?<AddAdmin />:<Login error={true}/>} />
       <Route path="admins" element={hasRole("managers")?<Admins />:<Login error={true}/>} />
       <Route path="transactions" element={hasRole("transactions")?<Transactions />:<Login error={true}/>} />
+      <Route path="transaction/detail" element={<TransactionDetails/>} />
       <Route path="foods" element={hasRole("foods")?<Foods />:<Login error={true}/>} />
       <Route path="foods/detail" element={hasRole("foods")?<FoodDetail />:<Login error={true}/>} />
       <Route path="foods/edit" element={hasRole("foods")?<EditFood />:<Login error={true}/>} />

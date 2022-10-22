@@ -11,6 +11,7 @@ onPaginationChange(event, value){
     this.setState({ page:value});
   }
   
+  
   paginatedList(){
     return this.state.filteredData.slice((this.state.page - 1) * this.pageCount, this.state.page * this.pageCount);
   }
@@ -21,6 +22,8 @@ onPaginationChange(event, value){
   componentDidMount(){
     this.getData()
   }
+
+  
   constructor(props) {
     super(props);
     this.state = {

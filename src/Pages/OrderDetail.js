@@ -7,6 +7,7 @@ import 'react-tabs/style/react-tabs.css';
 
 export default function OrderDetail() {
   const [order,setOrder] = useState(null)
+  const [carts,setCarts] = useState([])
   const location = useLocation();
   const imgStyle = { height: "100px", borderRadius: "100px", margin: "auto" };
 
@@ -36,6 +37,7 @@ export default function OrderDetail() {
       );
       const json = await response.json();
        setOrder(json)
+       setCarts(json.carts)
     } catch (error) {
       console.error(error);
     }
@@ -56,6 +58,7 @@ export default function OrderDetail() {
       <Tab>بيانات العميل</Tab>
       <Tab>بيانات المطبخ</Tab>
       <Tab>بيانات المندوب</Tab>
+      <Tab>الوجبات</Tab>
     </TabList>
 
     <TabPanel >
@@ -214,6 +217,60 @@ export default function OrderDetail() {
           </div>
         </div>
     </TabPanel>
+  
+ 
+    <TabPanel >
+  <div className="col-sm-12 ">
+          <div className="item-container my-3">
+
+            <div className="item-header">الوجبات</div>
+         
+            <h3>{carts?.food?.food.name}</h3>
+         
+          
+              { carts?.map((e , index) => {
+
+            return    <div className="row food-item-body" >
+              <div className="col-md-6" >
+                <div className="item-title  mt-1">
+                  الاسم
+                  <span className="item-content mx-3">
+                    {e?.food.food.name}
+                  </span>
+                </div>
+                <div className="item-title  mt-1">
+                  السعر
+                  <span className="item-content mx-3">
+                    {e?.food.food.price}
+                  </span>
+                </div>
+                
+                <div className="item-title  mt-1">
+                  الكمية
+                  <span className="item-content mx-3">
+                    {e?.quantity}
+                  </span>
+                </div>
+
+               
+
+              </div>
+              <div className="col-md-6" >
+                <img className="cart-image" src={window.baseurl+ "uploads/" + e?.food.photos[0]?.url  }
+                  />
+                </div>
+           </div>
+             
+               
+                })
+              }
+           
+
+
+            </div>
+            </div>
+  </TabPanel>
+  
   </Tabs>
   );
 }

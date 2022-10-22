@@ -92,36 +92,43 @@ if (data == null) getData();
   <div class="row" style={{display: "flex", alignItems: "stretch"}}>
     <div class="col-xl-6 mb-4">
       <div className="chart-box ">
+      <h3 className="chart-header"> المبيعات و الأرباح</h3>
       <LineChartOrders data={data}/>
       </div>
     
     </div>
     <div class="col-xl-6 mb-4">
       <div className="chart-box">
+      <h3 className="chart-header"> نسبة الطلبات المكتملة</h3>
       <OrderStatusChart data={data}/>
       </div>
     </div>
 
     <div class="col-xl-6 mb-4">
       <div className="chart-box">
+      <h3 className="chart-header">  الطباخين</h3>
       <ChartView data={data}/>
       </div>
     </div>
 
     <div class="col-xl-6 mb-4">
+   
       <div className="chart-box">
+      <h3 className="chart-header">  نسبة الطباخين للمدينة </h3>
       <PieChartView data={data}/>
       </div>
     </div>
 
     <div class="col-xl-6 mb-4">
       <div className="chart-box">
+      <h3 className="chart-header">  المناديب</h3>
       <LineChart data={data}/>
       </div>
     </div>
 
     <div class="col-xl-6 mb-4">
       <div className="chart-box">
+      <h3 className="chart-header">  نسبة المناديب للمدينة </h3>
       <DriversRateChart data={data}/>
       </div>
     </div>

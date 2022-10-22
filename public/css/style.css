@@ -821,3 +821,36 @@ display: block;
     position: absolute;
     width: 70%;
 }
+
+.chart-header {
+    font-size: 2rem;
+    margin-top: 10px;
+    padding-right: 30px;
+}
+
+
+.food-item-body {
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px !important;
+}
+
+.cart-image {
+    width: 80%;
+    height: 25vh;
+}
+
+
+.transaction-detail {
+    padding:  15px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: rgba(250, 240, 240, 0.188);
+    box-shadow: 0px 0px 20px 1px #cecece;
+    
+  }
+
+  .transaction-header{
+    
+  }

@@ -5,6 +5,7 @@ import Loading from "../Components/Spinner";
 import SwitcherView from "../Components/Switcher";
 import Popup from 'reactjs-popup';
 import CusineMeals from "./CusineMeals"
+import dateFormat from 'dateformat';
 
 export default class Foods extends React.Component{
   componentDidMount(){
@@ -142,7 +143,7 @@ export default class Foods extends React.Component{
                         <i className="fa fa-star" />
                       </td>
                       <td>{this.state.filteredData.indexOf(e)+1}</td>
-                      <td>{e?.food.createdAt}</td>
+                      <td>{ e?.food.createdAt ? dateFormat(e.food.createdAt , "m/d/yyyy") : e?.food.createdAt}</td>
                       <td>{e?.food.name.split("大")[0]}</td>
                       <td>{e?.food.marketName.split("大")[0]}</td>
                       <td>{(e?.food.price - (e?.food.price * .25) )+" SR"}</td>
