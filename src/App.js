@@ -35,7 +35,7 @@ import Settings from './Pages/Settings';
 import ContactUs from './Pages/ContactUs';
 import CusinePage from './Pages/CusinePage';
 import CusineMeals from './Pages/CusineMeals';
-import MailsList from './Pages/MailsLispt';
+import MailsList from './Pages/MailsList';
 import TransactionDetails from './Pages/TransactionDetails';
 
 function App() {
