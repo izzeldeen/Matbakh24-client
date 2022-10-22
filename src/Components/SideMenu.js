@@ -97,7 +97,7 @@ export default function SideMenu() {
 
         <button onClick={(e)=>navigate("/admin/transactions")} className={isActive("/admin/transactions")}>
 
-            العمليات المالية <i className="fa-solid fa-credit-card icon" />
+            التدقيق المالي <i className="fa-solid fa-credit-card icon" />
             <i className="fa fa-caret-down" />
 
           </button>
