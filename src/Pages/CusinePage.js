@@ -18,7 +18,7 @@ export default function CusinePage(){
     const unSelectedStyle = "w-[200px] h-[40px] text-[black] font-bold cursor-pointer flex justify-center items-center bg-[white]  border-4 border-[2px]";
 
     return <div>
-        <div className="flex m-auto h-[40px]  flex justify-center items-center">
+        <div className="flex m-auto h-[40px]  flex justify-center items-center provider-details">
             <div onClick={(e)=>handelSelect(0)} className={(index==0?selectedStyle:unSelectedStyle)+" rounded-r-lg"}>
                 <div className="m-auto">تفاصيل المطبخ</div>
             </div>

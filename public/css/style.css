@@ -238,6 +238,9 @@ body {
     color: orange;
 }
 
+.provider-details{
+padding-top: 70px;
+}
 .image-gallery-slide img {
     width: 80%;
     object-fit: cover;
