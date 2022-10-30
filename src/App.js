@@ -28,6 +28,7 @@ import Roles from './Pages/Roles';
 import hasRole from './Functions';
 import TabsView from './Components/TabsView';
 import FoodDetail from './Pages/FoodDetail';
+import FoodList from './Pages/FoodList';
 import EditFood from './Pages/EditFood';
 import MobileHome from './Pages/MobileHome';
 import NotPermited from './Pages/NotPermited';
@@ -39,11 +40,11 @@ import MailsList from './Pages/MailsList';
 import TransactionDetails from './Pages/TransactionDetails';
 
 function App() {
-  // window.baseurl = "http://localhost:5009/"
-  // window.baseurl = "https://webapi.matbakh24.com/"
+  //window.baseurl = "http://localhost:5009/"
+ // window.baseurl = "https://webapi.matbakh24.com/"
     // window.baseurl = "https://localhost:44308/"
   // window.baseurl = "https://webapi.matbakh24.com/"
-  window.baseurl = "https://dev.webapi.matbakh24.com/"
+ window.baseurl = "https://dev.webapi.matbakh24.com/"
   return (
     <Router basename="/">
     <Routes >
@@ -74,6 +75,7 @@ function App() {
       <Route path="transaction/detail" element={<TransactionDetails/>} />
       <Route path="foods" element={hasRole("foods")?<Foods />:<Login error={true}/>} />
       <Route path="foods/detail" element={hasRole("foods")?<FoodDetail />:<Login error={true}/>} />
+      <Route path="Cooking/List" element={hasRole("foods")?<FoodList />:<Login error={true}/>} />
       <Route path="foods/edit" element={hasRole("foods")?<EditFood />:<Login error={true}/>} />
       <Route path="reports" element={hasRole("reports")?<TabsView />:<Login error={true}/>} />
       <Route path="settings" element={<Settings/>} />

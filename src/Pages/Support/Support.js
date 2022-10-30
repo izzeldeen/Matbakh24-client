@@ -48,26 +48,30 @@ export default function Support() {
     try {
       const formdata = new FormData();
       formdata.append("userId", userId);
-      const response = await fetch(window.baseurl + "support/update-user-chat", {
-        method: "POST",
-        headers: {
-          Authorization: "Bearer " + localStorage.getItem("token"),
-        },
-        body: formdata,
-      });
- 
+      const response = await fetch(
+        window.baseurl + "support/update-user-chat",
+        {
+          method: "POST",
+          headers: {
+            Authorization: "Bearer " + localStorage.getItem("token"),
+          },
+          body: formdata,
+        }
+      );
     } catch (error) {
       console.error(error);
     }
   };
-
-
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
       postForm();
       setMessage("");
     }
+  };
+  const submitForm = (e) => {
+    postForm();
+    setMessage("");
   };
 
   const postForm = async () => {
@@ -97,8 +101,8 @@ export default function Support() {
     getChats();
     var interval = setInterval(() => {
       getChats();
-     getCurrentChat(currentChat[0].user?.id);
-     console.log("fire");
+      getCurrentChat(currentChat[0].user?.id);
+      console.log("fire");
     }, MINUTE_MS);
 
     return () => clearInterval(interval);
@@ -110,19 +114,18 @@ export default function Support() {
         <div className="left-side">
           <div className="header">
             <div className="user-imgBx">
-            <img
-          className="userImg m-auto"
-          src="img/appLogo.png"
-        />
+              <img className="userImg m-auto" src="img/appLogo.png" />
             </div>
             <ul className="nav-icons">
               <p className="mx-3">{localStorage.getItem("name")}</p>
             </ul>
           </div>
+          
           <div className="search-chat">
             <input type="text px-3" placeholder="  بحث عن مستخدم  " />
             <ion-icon name="search-outline" />
           </div>
+
           <div className="chat-list">
             {chats &&
               chats.map(
@@ -131,11 +134,11 @@ export default function Support() {
                     <div
                       onClick={(e) => {
                         getCurrentChat(row[0].user?.id);
-                        updateUserChat(row[0].user?.id)    
-
+                        updateUserChat(row[0].user?.id);
                       }}
                       className={
-                        currentChat && currentChat[0].user?.id == row[0].user?.id
+                        currentChat &&
+                        currentChat[0].user?.id == row[0].user?.id
                           ? "chat active"
                           : "chat"
                       }
@@ -154,9 +157,7 @@ export default function Support() {
                       </div>
                       <div className="details">
                         <div className="head">
-                          <h4 className="name">
-                            {row[0].user?.fullName}
-                          </h4>
+                          <h4 className="name">{row[0].user?.fullName}</h4>
                           <span className="time">
                             {row[row?.length - 1].message.date.replaceAll(
                               "T",
@@ -168,8 +169,12 @@ export default function Support() {
                           <p className="msg">
                             {row[row?.length - 1].message.message}
                           </p>
-                          {  row?.filter(e=>e.message.status ==0).length>0&& <b className="num unread">{ row?.filter(e=>e.message.status ==0).length
-                          }</b>}
+                          {row?.filter((e) => e.message.status == 0).length >
+                            0 && (
+                            <b className="num unread">
+                              {row?.filter((e) => e.message.status == 0).length}
+                            </b>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -179,7 +184,7 @@ export default function Support() {
         </div>
 
         {/* ========= right side ========== */}
-        {(
+        {
           <div className="right-side">
             <div className="header">
               <div className="user-details">
@@ -198,16 +203,16 @@ export default function Support() {
                     />
                   )}{" "}
                 </div>
-                <h4 >
+                <h4>
                   {currentChat && currentChat[0].user?.fullName}
                   <br />
                   <h5 className="text-success mt-2">
-                  {currentChat && currentChat[0].user?.userName?.replace('+' , '')}
+                    {currentChat &&
+                      currentChat[0].user?.userName?.replace("+", "")}
                   </h5>
-                 
+
                   {/* <span>متصل</span> */}
                 </h4>
-              
               </div>
               <ul className="nav-icons">
                 <li>
@@ -236,7 +241,6 @@ export default function Support() {
                 ))}
             </div>
             <div className="chat-input">
-         
               <input
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
@@ -247,7 +251,7 @@ export default function Support() {
               />
             </div>
           </div>
-        )}
+        }
       </div>
     </div>
   );
