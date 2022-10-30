@@ -149,7 +149,7 @@ onPaginationChange(event, value){
                 </tr>
               </thead>
               <tbody>
-                  { this.paginatedList().map((e,index)=>      
+                  { this.paginatedList()?.map((e,index)=>      
                         <tr>
                   {/* <td><input type="checkbox" /></td> */}
                   <td><i className="fa fa-star" /></td>

@@ -146,7 +146,7 @@ export default class Foods extends React.Component{
                       <td>{ e?.food.createdAt ? dateFormat(e.food.createdAt , "m/d/yyyy") : e?.food.createdAt}</td>
                       <td>{e?.food.name.split("大")[0]}</td>
                       <td>{e?.food.marketName.split("大")[0]}</td>
-                      <td>{(e?.food.price - (e?.food.price * .25) )+" SR"}</td>
+                      <td>{(e?.food.price - (e?.food.provider_price * .25) )+" SR"}</td>
                       <td>{e?.food.price+" SR"}</td>
                       <td>
                         
