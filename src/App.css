@@ -2,10 +2,11 @@
   text-align: center;
 }
 
-*{
+* {
   font-family: 'Cairo', sans-serif;
 
 }
+
 /* 
 .sideMenu{
   position:fixed;
@@ -15,7 +16,7 @@
   z-index: 1;
 } */
 
-.menu-bar{
+.menu-bar {
   position: absolute;
   top: 10;
   right: 10;
@@ -24,7 +25,8 @@
   height: 50px;
 
 }
-.sideMenu{
+
+.sideMenu {
   position: relative;
   width: 20vw;
 
@@ -32,10 +34,11 @@
 
 .image-gallery {
   margin: 10px 30px;
-  padding:30px 10px;
+  padding: 30px 10px;
 
 }
-.not-permited{
+
+.not-permited {
   position: absolute;
   top: 0;
   right: 0;
@@ -54,7 +57,7 @@
   
 }  */
 
-.image-gallery-thumbnail-image{
+.image-gallery-thumbnail-image {
   height: 100px;
   object-fit: fill;
 }
@@ -73,9 +76,10 @@
   width: 300px;
 } */
 
-#check-btn{
+#check-btn {
   width: 40px;
 }
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -87,53 +91,60 @@
   }
 }
 
-.item-container{
-  padding:  15px;
+
+.item-container {
+  padding: 15px;
   border-radius: 20px;
   background-color: rgba(250, 240, 240, 0.188);
   box-shadow: 0px 0px 20px 1px #cecece;
-  
+
 }
 
-.item-title{
+.item-title {
   color: orange;
   font-size: 20px;
   font-weight: bold;
 }
 
-.box{
-  box-sizing: border-box;
-  border: 20px solid transparent;
-  background-clip:padding-box;
+.food-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
-.item-header{
+.box {
+  box-sizing: border-box;
+  border: 20px solid transparent;
+  background-clip: padding-box;
+}
+
+.item-header {
   color: black;
   font-size: 20px;
   font-weight: bold;
 }
 
-.item-content{
+.item-content {
   color: grey;
   font-size: 20px;
   font-weight: 500;
 }
 
-.row-eq-height > [class^=col] {
+.row-eq-height>[class^=col] {
   display: flex;
   flex-direction: column;
 }
 
- .col-content{
+.col-content {
   margin: 10px;
   padding: 10px;
 
   border: 0.2px solid grey;
   border-radius: 20px;
- }
+}
 
 
-.btn-warning{
+.btn-warning {
   position: relative;
   padding: 11px 16px;
   font-size: 15px;
@@ -142,10 +153,10 @@
   color: #000;
   background-color: #ffc100;
   border: 0;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
-.btn-warning input[type = "file"]{
+.btn-warning input[type="file"] {
   cursor: pointer;
   position: absolute;
   left: 0%;
@@ -153,22 +164,23 @@
   opacity: 0;
 }
 
-.btn-warning:hover{
+.btn-warning:hover {
   background-color: #d9a400;
 }
 
 
-.loader{
-width: 70vw;
-height: 80vh;
+.loader {
+  width: 70vw;
+  height: 80vh;
   display: flex;
   align-items: center;
 
   justify-content: center;
 }
 
-.spinner-border{
-  width: 5rem; height: 5rem;
+.spinner-border {
+  width: 5rem;
+  height: 5rem;
 }
 
 
@@ -191,6 +203,7 @@ height: 80vh;
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -199,178 +212,205 @@ height: 80vh;
 
 
 
-.roles{
+.roles {
   width: 75vw;
 }
 
-.checks{
+.checks {
   display: flex;
   flex-wrap: wrap;
   background-color: aliceblue;
   align-items: center;
-  padding: 10px ;
+  padding: 10px;
   margin: 0;
   font-size: 14px;
   justify-content: space-between;
-  }
-  .check-lable{
-    margin-right: 20px;
-    margin-left: 20px;
-  
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .form-check-input{
-    margin-right: 0px;
-    height: 13px;
-    width: 13px;
-  }
- 
-  .css-1vr111p-option input , .css-1qprcsu-option input{
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+}
+
+.check-lable {
+  margin-right: 20px;
+  margin-left: 20px;
+
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.form-check-input {
+  margin-right: 0px;
+  height: 13px;
+  width: 13px;
+}
+
+.css-1vr111p-option input,
+.css-1qprcsu-option input {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 
-  .form-check input{
-    height: 13px;
-    width: 13px;
-  }
-  .form-check{
-    padding: 0px;
-    width: 120px;
-    width: 10px;
-  
-  }
+.form-check input {
+  height: 13px;
+  width: 13px;
+}
 
-  .butt{
-    height: 40px;
-    font-size: 20px;
-    margin-right: 30px;
-    width: 100px;
-  }
+.form-check {
+  padding: 0px;
+  width: 120px;
+  width: 10px;
 
-  #table-details th{
-    font-size: 12px;
-    background-color: #07b8b8;
-    color: white;
+}
+
+.butt {
+  height: 40px;
+  font-size: 20px;
+  margin-right: 30px;
+  width: 100px;
+}
+
+#table-details th {
+  font-size: 12px;
+  background-color: #07b8b8;
+  color: white;
   ;
-  }
-  th{
-    background-color: #ee8923;
-    color: white;
-  }
-  
-   th,td{
-    font-size: 13px;
-    font-weight: bold;
-  }
-  
-  th{
-    font-size: 12px;
-  
-  }
-  
-  
+}
 
-  #tabs{
-   width: 70vw;
-    }
+th {
+  background-color: #ee8923;
+  color: white;
+}
 
-  .form-check-lg{
-    padding: 0px;
-    width: 200px;
-  }
-  .form-check2{
-    padding: 0px;
-    width: 200px;
-  }
-  .check-lable{
-    font-size: 13px;
-    font-weight: bold;
-    padding: 0px;
-  
-  }
-  
-  .contact .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0px auto;
-    }
-    .contact form{
-    background-color: #fff;
-    padding: 35px;
-    border-radius: 4px;
-    }
-    .contact input,.contact textarea{
-    width: 100%;
-    margin-top: 25px;
-    padding: 5px 15px;
-    box-sizing: border-box;
-    line-height: 2;
-    font-size:16px;
-    background: #ecf0f1;
-    border: 2px solid rgba(216, 216, 216, 0.3);
-    border-radius: 6px;
-    }
-    .contact input{
-    height: 50px;
-    }
-    .contact input[type=number]::-webkit-inner-spin-button,
-    .contact input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-    }
-    .contact textarea{
-    height: 120px;
-    padding-top: 10px;
-    }
-    .contact button{
-    background-color: #d63031;
-    color: #fff;
-    padding: 10px 30px;
-    border:0px;
-    height: 50px;
-    cursor: pointer;
-    margin-top: 15px;
-    font-size: 18px;
-    border-radius: 6px;
-    }
-    .contact button:hover{
-    background-color: #e74c3c;
-    }
-    @media(min-width: 762px){
-      .contact .container{
+th,
+td {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+th {
+  font-size: 12px;
+
+}
+
+
+
+#tabs {
+  width: 70vw;
+}
+
+.form-check-lg {
+  padding: 0px;
+  width: 200px;
+}
+
+.form-check2 {
+  padding: 0px;
+  width: 200px;
+}
+
+.check-lable {
+  font-size: 13px;
+  font-weight: bold;
+  padding: 0px;
+
+}
+
+.contact .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0px auto;
+}
+
+.contact form {
+  background-color: #fff;
+  padding: 35px;
+  border-radius: 4px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  margin-top: 25px;
+  padding: 5px 15px;
+  box-sizing: border-box;
+  line-height: 2;
+  font-size: 16px;
+  background: #ecf0f1;
+  border: 2px solid rgba(216, 216, 216, 0.3);
+  border-radius: 6px;
+}
+
+.contact input {
+  height: 50px;
+}
+
+.contact input[type=number]::-webkit-inner-spin-button,
+.contact input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contact textarea {
+  height: 120px;
+  padding-top: 10px;
+}
+
+.contact button {
+  background-color: #d63031;
+  color: #fff;
+  padding: 10px 30px;
+  border: 0px;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.contact button:hover {
+  background-color: #e74c3c;
+}
+
+@media(min-width: 762px) {
+
+  .contact .container {
     max-width: 50%;
-    }
-    }
-    @media(max-width: 762px){
-      .contact .container{
+  }
+}
+
+@media(max-width: 762px) {
+  .contact .container {
     max-width: 70%;
-    }
-    }
-    @media(max-width: 575px){
-      .contact .container{
+  }
+}
+
+@media(max-width: 575px) {
+  .innerContent {
+    margin-top: -50px;
+    margin-right: -60px;
+    width: 400px;
+  }
+
+  .contact .container {
     max-width: 80%;
-    }
-    .contact form{
+  }
+
+  .contact form {
     padding: 20px;
-    }
-    }
+  }
+}
 
-    .contact{
-      width: 50vw;
-    }
+.contact {
+  width: 50vw;
+}
 
-    .item-title{
-      margin-top: 30px;
-    }
+.item-title {
+  margin-top: 30px;
+}
 
 
-    .headCon{
-      background-color: #07b8b8;
-    }
+.headCon {
+  background-color: #07b8b8;
+}

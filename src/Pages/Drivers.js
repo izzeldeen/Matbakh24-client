@@ -179,7 +179,7 @@ export default class  Drivers extends React.Component{
                       <td>{e?.user?.createdAt}</td>
                       <td>{e?.user?.fullName}</td>
                       <td>{e?.user?.email}</td>
-                      <td>{e?.driver?.city}</td>
+                      <td>{e?.user?.city}</td>
                       <td>{e?.user?.userName.replaceAll("+","")}</td>
                       <td>{<img  src={window.baseurl+"uploads/"+e.user?.profileImage} onError={(e) => (e.target.onerror = null, e.target.src = "../img/account.jpeg")} alt="img" />}</td>
                       <td>
